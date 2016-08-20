@@ -21,7 +21,7 @@ if not bucket:
     logging.fatal("couldn't find the broodmate bucket!")
     sys.exit(1)
 
-brood_dir = os.path.join('/home', 'pi', 'broodmate')
+brood_dir = os.path.join('/home', 'pi', 'broodmon')
 files = {'graphs': ['hour.png', 'day.png', 'week.png', 'month.png'], 'cam': ['lastsnap.jpg']}
 
 for k in files.keys():

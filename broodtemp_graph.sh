@@ -1,6 +1,6 @@
 #!/bin/bash
 
-RRDPATH="/home/pi/broodmate"
+RRDPATH="/home/pi/broodmon"
 RRDFILE=$RRDPATH/broodtemp.rrd
 AMBIENTRAW="#0000FF"
 AMBIENTTREND="#8888FF"
