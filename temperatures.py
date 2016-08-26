@@ -9,8 +9,8 @@ HOT_THRESHOLD = 105
 logging.basicConfig(level=logging.INFO)
 
 dev_dir = '/sys/bus/w1/devices'
-ambient_dev = os.path.join(dev_dir, '28-00000460db84', 'w1_slave')
-brood_dev = os.path.join(dev_dir, '28-000004617cfb', 'w1_slave') # has tape
+brood_dev = os.path.join(dev_dir, '28-00000460db84', 'w1_slave')
+ambient_dev = os.path.join(dev_dir, '28-000004617cfb', 'w1_slave') # has tape
 
 temp_log_file = '/home/pi/broodmon/temp.log'
 
