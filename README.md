@@ -33,9 +33,8 @@ Root's crontab looks like this (sudo crontab -e):
 
 ```
 # Network Monitoring
-#* * * * * /home/pi/netmon.sh
-* * * * * date >> /home/pi/monitoring/pingmon.log; ping 192.168.1.1 -c10 |
-* tail -2 | head -1 >> /home/pi/monitoring/pingmon.log
+* * * * * /home/pi/netmon.sh
+#* * * * * date >> /home/pi/monitoring/pingmon.log; ping 192.168.1.1 -c10 | tail -2 | head -1 >> /home/pi/monitoring/pingmon.log
 
 # Temperatures
 * * * * * python /home/pi/broodmon/temperatures.py
