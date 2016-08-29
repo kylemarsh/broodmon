@@ -7,6 +7,7 @@ if ! ping 192.168.1.1 -c2
 then
 	echo -n "Network down at `date`.." >> /home/pi/monitoring/pingmon.log;
 	ifdown wlan0; echo -n "droping wlan0 ($?).." >> /home/pi/monitoring/pingmon.log;
+	sleep 5s;
 	ifup wlan0; echo "raising wlan0 ($?)" >> /home/pi/monitoring/pingmon.log;
 fi
 
